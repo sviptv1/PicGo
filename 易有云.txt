@@ -1,0 +1,55 @@
+cd /home
+
+ls
+
+wget https://fw0.koolcenter.com/binary/LinkEase/LinuxStorage/linkease-binary-1.6.0.tar.gz
+
+tar -linkease-binary-1.6.0.tar.gz
+
+cd linkease-binary-1.6.0
+
+
+
+chmod 755 linkease.arm
+
+ls
+
+./linkease.arm
+
+
+tar -zxvf linkease-binary-1.6.1.tar.gz
+
+192.168.0.108:1008
+
+vi /etc/rc.local  
+./home/linkease-binary-1.6.1/linkease.arm
+mkdir -m 755 /home
+chmod +x linkease.x86_64
+
+
+CasaOS安装易有云
+
+安装
+创建安装路径
+mkdir -m 755 /opt/linkease
+
+
+下载易有云压缩包
+cd /opt/linkease
+
+wget http://fw0.koolcenter.com/binary/LinkEase/LinuxStorage/linkease-binary-1.6.0.tar.gz
+
+
+解压
+tar -zxvf linkease-binary-1.6.0.tar.gz
+
+cd linkease-binary-1.6.0.tar.gz
+
+ls -a
+
+
+赋予可执行权限
+chmod +x linkease.arm
+
+添加开机自启
+nano /etc/systemd/system/linkease.service
